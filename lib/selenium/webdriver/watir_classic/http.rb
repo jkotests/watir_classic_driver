@@ -3,7 +3,7 @@ module Selenium
 		module WatirClassic
 			class Http < Remote::Http::Default
 				def new_http_client
-					RubyRemoteEnd::RemoteEnd.new('WatirClassic', server_url.path)
+					RubyRemoteEnd::RemoteEnd.new(::WatirClassicDriver, server_url.path)
 				end
 			end
 		end

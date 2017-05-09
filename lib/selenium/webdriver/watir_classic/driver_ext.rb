@@ -1,7 +1,7 @@
 module Selenium
 	module WebDriver
 		module WatirClassic
-			module Driver
+			module DriverExt
 				def for(browser, opts = {})
 					return super unless browser == :watir_classic
 
